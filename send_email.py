@@ -11,10 +11,10 @@ subject = "Email from Kaszuby"
 body = "This is a test email from Kaszuby!"
 sender_email = "workharder1000000@gmail.com"
 receiver_email = "workharder1000000@gmail.com"
-password = input("enter a password: ")
+password = input("enter a password: ")                 
 
 #building the email
-message = EmailMessage()
+message = MIMEMultipart()
 message["From"] = sender_email
 message["To"] = receiver_email
 message["Subject"] = subject
